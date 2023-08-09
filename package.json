@@ -1,0 +1,33 @@
+{
+  "name": "crypto_stego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "pro": "concurrently --kill-others-on-fail \"npm run start\" \"npm run client\"",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "image-convert": "^0.1.33",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "sharp": "^0.32.1",
+    "stegcloak": "^1.1.1",
+    "steggy": "^2.0.1",
+    "steggy-noencrypt": "^2.0.3"
+  }
+}
